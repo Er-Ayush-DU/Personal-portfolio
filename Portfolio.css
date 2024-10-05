@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+}
+
+
+/* Header Section */
+
+header {
+  background: rgb(35, 23, 36);
+  height: 650px;
+  width: 100vw;
+}
+
+.navBar {
+  height: 10vh;
+}
+
+.HeroSection {}
+
+.NavDetails {
+  height: 10vh;
+  color: white;
+  margin-right: 120px;
+}
+
+.NavigationLinks {
+  height: 10vh;
+  margin-top: 10px;
+}
+
+.NavDetails a {
+  padding-left: 30px;
+}
+
+.dark_CV {
+  height: 40px;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+
+.dark_CV a i {
+  position: relative;
+  top: 0;
+}
+
+.CV {
+  width: 120px;
+  height: 30px;
+  background: #f2f1f1;
+  color: rgb(90, 47, 93);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 20px;
+  cursor: pointer;
+
+}
+
+.intro_Image {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.heroimage img {
+  width: 15vw;
+  height: 35vh;
+  border-radius: 10px;
+}
+
+.Intro {
+  color: white;
+  height: auto;
+}
+
+.Intro h1 {
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.Intro p {
+  font-family: "Arial", Poppins, Arial, Helvetica, sans-serif;
+  width: 65vw;
+  font-size: 14px;
+  font-weight: 350;
+  height: auto;
+  margin-top: 10px;
+}
+
+.PersonalDetails {
+  display: flex;
+  float: left;
+  color: white;
+
+}
+
+#PerDet1 {
+
+  margin-left: 5rem;
+}
+
+#PerDet2 {
+  margin-left: 4rem;
+}
+
+#PerDet1 p,
+#PerDet2 p {
+  width: 30vw;
+}
+
+.SocialMedia {
+  margin-top: 10rem;
+  margin-left: 4.5rem;
+}
+
+.SocialMedia i {
+  padding-left: 1.2rem;
+}
