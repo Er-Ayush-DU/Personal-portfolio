@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+  <link rel="shortcut icon" href="assets/Ayush.jpg" type="image/x-icon">
   <link rel="stylesheet" href="Portfolio.css">
   <link rel="shortcut icon" href="assets/Passbook size photo (college).jpg" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -14,97 +15,139 @@
 </head>
 
 <body>
-  <header class="HeroSection">
 
-    <div class="navBar">
-      <div class="NavDetails flex flex-row-reverse">
-        <div class="dark_CV flex flex-row-reverse">
-          <div class="CV">Download CV</div>
+  <!-- HEADER SECTION -->
 
-          <div class="darkMode">
-            <div><a href=""><i class="fa-solid fa-moon"></i></a></div>
-          </div>
-        </div>
+  <div class="portfolio-container">
+    <ul class="navlist">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">project</a></li>
+      <li><a class="Resume" href="Resume.png" target="_blank">Resume</a></li>
+      <!-- <li><a href="#">Resume</a></li> -->
 
-        <div class="NavigationLinks">
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Projects</a>
-          <a href="">Testimonials</a>
-          <a href="">Contact</a>
+    </ul>
+    <div class="left-container">
+      <div class="icons">
+        <i class="fa-brands fa-facebook-f"> </i>
+        <i class="fa-brands fa-instagram"> </i>
+        <i class="fa-brands fa-twitter"> </i>
+        <i class="fa-brands fa-linkedin"> </i>
+      </div>
+
+      <div class="content">
+        <p class="intro"> HI !<span> I Am Ayush Tiwari</span> </p>
+        <h1>Web Developer.</h1>
+        <p class="details">I'm a dedicated web development student with a strong foundation in HTML, CSS, and
+          JavaScript. I've built various projects, including a personal portfolio and a weather app. Currently pursuing
+          a B.Voc. Software Development at Delhi University, I am continuously expanding my skills through coursework
+          and self-learning. Explore my projects on GitHub and my Portfolio.
+        </p>
+
+        <div class="btn-container">
+          <button>Hire Me</button>
+          <button>View Project</button>
         </div>
 
       </div>
 
+    </div>
+    <div class="right-container"> </div>
 
-      <div class="intro_Image">
-        <div class="Intro text-[white]">
-          <h1>Hi, I'm Ayush 👋</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maiores tempore corporis ut autem, aspernatur
-            quibusdam recusandae suscipit nobis eum totam. Reiciendis, similique deserunt vitae quos mollitia maiores
-            modi tempora, aperiam quia quo, voluptatibus nisi omnis! Voluptate omnis fugit in est atque corporis tempore
-            iste sit. Earum maiores fugiat, libero repellendus ipsa autem. Quaerat atque et officia enim numquam
-            aliquam.</p>
-        </div>
-        <div class="heroimage"><img src="assets/Passbook size photo (college).jpg" alt="Image"></div>
+    <div class="design">
+      <div></div>
+      <div class=" circle"></div>
+
+      <div class="CV">Download CV</div>
+      <div class="dark_mode"><a href=""><i class="fa-solid fa-moon"></i></a></div>
+
+
+
+    </div>
+
+  </div>
+
+
+  <main>
+    <div class="aboutSection">
+
+      <div class="aboutMe">
+        <h1>About me</h1>
       </div>
 
-
-
-      <div class="PersonalDetails max-w-md mx-auto mt-10">
-
-        <div id="PerDet1">
-          <div class="flex items-center mb-4">
-            <i class="fas fa-map-marker-alt text-xl mr-3"></i>
-            <p>110019,Govindpuri,South Delhi</p>
-          </div>
-
-          <div class="flex items-center mb-4">
-            <i class="fas fa-phone text-xl mr-3"></i>
-            <p><a href="tel:+15551234567">9260932458</a></p>
-          </div>
-        </div>
-
-        <div id="PerDet2">
-          <div class="flex items-center mb-4">
-            <i class="fas fa-envelope text-xl mr-3"></i>
-            <p><a href="mailto:example@email.com">er.ayush336@email.com</a></p>
-          </div>
-
-          <div class="flex items-center">
-            <i class="fas fa-birthday-cake text-xl mr-3"></i>
-            <p>August 15, 2024</p>
-          </div>
+      <div class="left_rightContainer">
+        <div class="aboutImage"><img src="assets/Ayush.jpg" alt="About Image"></div>
+        <div class="aboutDetails">
+          <h2>"Innovative Software Developer | Web & Mobile Application Enthusiast"</h2>
+          <p>I am a dedicated Computer Science student with a strong passion for software development and
+            problem-solving. With hands-on experience in building web and mobile applications through coursework and
+            personal projects, I enjoy transforming ideas into functional, user-friendly solutions. I thrive in
+            collaborative environments, value teamwork, and continuously seek opportunities to enhance my skills and
+            stay updated with the latest technologies.
+            Driven by curiosity and innovation, I am eager to contribute to impactful projects and make a meaningful
+            difference in the tech industry. Let's connect and create something extraordinary!</p>
         </div>
       </div>
+    </div>
 
-      <div class="SocialMedia">
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com" target="_blank" class="text-blue-600 text-3xl">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <!-- GitHub -->
-        <a href="https://www.github.com" target="_blank" class="text-gray-800 text-3xl">
-          <i class="fab fa-github"></i>
-        </a>
-        <!-- Instagram -->
-        <a href="https://www.instagram.com" target="_blank" class="text-pink-600 text-3xl">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <!-- Facebook -->
-        <a href="https://www.facebook.com" target="_blank" class="text-blue-700 text-3xl">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <!-- Figma -->
-        <a href="https://www.figma.com" target="_blank" class="text-red-500 text-3xl">
-          <i class="fab fa-figma"></i>
-        </a>
+    <!-- SKILL SECCATION -->
+
+    <section class="List_section">
+      <h1>
+        <center>Technical Skills</center>
+      </h1>
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Skill items will be dynamically added -->
       </div>
 
-  </header>
+      <!-- Pop-up Modal -->
+      <div class="popup" id="popup">
+        <div class="popup-content">
+          <span class="close-btn" id="closePopup">&times;</span>
+          <h2 id="popupTitle"></h2>
+          <p id="popupDescription"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience_container">
+      <h1>
+        <center>Experience</center>
+      </h1>
+      <div class="experience-grid" id="experienceGrid">
+        <!-- Experience items will be dynamically added -->
+      </div>
+
+      <!-- Pop-up Modal -->
+      <div class="popupExperience" id="popupExperience">
+        <div class="popup-content">
+          <span class="close-btn" id="closePopupExperience">&times;</span>
+          <h2 id="popupExperienceTitle"></h2>
+          <p id="popupExperienceDescription"></p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+
+
 
 
   <script src="Portfolio.js"></script>
+
+
 </body>
 
 </html>
