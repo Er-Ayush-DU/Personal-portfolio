@@ -25,29 +25,29 @@ html {
 
 /* Header Section */
 
-.CV{
+.CV {
   width: 150px;
   position: absolute;
-  right:220px;
-  top:43px;
-  color:black;
-  background:white;
+  right: 220px;
+  top: 43px;
+  color: black;
+  background: white;
   text-align: center;
   padding: 7px;
   font-weight: 600;
-  cursor:pointer;
-  border-radius:5px;
+  cursor: pointer;
+  border-radius: 5px;
   font-size: 17px;
-  
+
 }
 
-.dark_mode{
+.dark_mode {
   position: absolute;
-  right:140px;
-  top:40px;
-  color:black;
+  right: 140px;
+  top: 40px;
+  color: black;
   font-size: 30px;
-  
+
 }
 
 .portfolio-container {
@@ -69,7 +69,8 @@ html {
   position: fixed;
 
 }
-.navlist li{
+
+.navlist li {
   position: sticky;
 }
 
@@ -142,13 +143,12 @@ html {
 .intro::first-letter {
   color: rgb(245, 13, 21);
   font-size: 50px
-
 }
 
 .intro::first-line {
   color: rgb(245, 13, 21);
   font-size: 50px;
-  
+
 }
 
 .content .intro span {
@@ -249,7 +249,7 @@ button:nth-child(2):hover {
     0 0 1rem #fff,
     inset 0 0 1rem #fff,
     0 0 2rem #e137bf,
-    inset 0 0 2rem #e137bf, 
+    inset 0 0 2rem #e137bf,
     0 0 4rem #3877ff,
     inset 0 0 4rem #3877ff;
   opacity: 1;
@@ -315,11 +315,25 @@ button:nth-child(2):hover {
 
 .List_section {
   padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .List_section h1 {
+  width: 15vw;
   font-weight: 700;
-  font-size: xx-large;
+  font-size: 20px;
+  padding: 3px;
+  color: blueviolet;
+  background: rgb(198, 147, 246);
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.List_section h3 {
+  margin-bottom: 20px;
+  font-size: 17px;
 }
 
 #skillsGrid {
@@ -418,15 +432,28 @@ button:nth-child(2):hover {
 
 .experience_container {
   background-color: #f7f7f7;
-  /* Light background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 40px;
 }
 
 .experience_container h1 {
+  width: 15vw;
   font-weight: 700;
-  font-size: xx-large;
+  font-size: 20px;
+  padding: 3px;
+  color: rgb(7, 47, 110);
+  background: rgb(66, 160, 233);
+  border-radius: 20px;
+  margin-bottom: 15px;
 }
 
+.experience_container h3 {
+  margin-bottom: 20px;
+  font-size: 17px;
+
+}
 
 .experience-grid {
   margin-top: 20px;
@@ -497,4 +524,85 @@ button:nth-child(2):hover {
   color: white;
   border: none;
   border-radius: 5px;
+}
+
+/* MAIN SECTION(PROJECT SECTION) */
+
+.Project_Section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+.Project_Section h1{
+  width: 15vw;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 3px;
+  color: rgb(67, 3, 54);
+  background: rgb(236, 54, 215);
+  border-radius: 20px;
+  margin-bottom: 15px;
+  
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.project-card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 15px;
+}
+
+.project-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color:#007bff;
+}
+
+.project-description {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  color: #aaa;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tech-badge {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-size: 0.8em;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
 }

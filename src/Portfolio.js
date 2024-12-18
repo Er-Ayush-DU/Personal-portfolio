@@ -212,3 +212,61 @@ closePopupExperience.addEventListener("click", () => {
 
 // Initialize the experience section
 createExperienceItems();
+
+
+
+
+// Project Section
+
+// Project data using an array of objects
+const projects = [
+  {
+    title: "Home Service Website",
+    image: "./assets/Project1.png", // Replace with your image URL
+    description:
+      "I built a Home service website for the society with 2 way interaction  the website name is SAMIP. Basically it is designed for streamline the process of booking and managing home maintenance services. The platform allows users to browse a variety of services such as plumbing, electrical repairs, and cleaning, while offering seamless two-way communication with service providers to ensure clarity and customization of tasks.",
+    technologies: ["React", "JavaScript", "Tailwind", "Git"],
+  },
+  {
+    title: "Myntra clone",
+    image: "./assets/Project2.png", // Replace with your image URL
+    description:
+      "Myntra Clone (Built Using Only HTML and CSS) is a static e-commerce website designed to replicate the look and feel of Myntra, focusing on showcasing fashion products such as clothing, footwear, and accessories.",
+    technologies: ["HTML", "CSS", "Bootstrap",],
+  },
+  {
+    title: "Virtual Assistant",
+    image: "./assets/Project3.png", // Replace with your image URL
+    description: "Sirri is a basic virtual assistant created using only JavaScript. It leverages JavaScript's powerful functionality to handle user commands, answer queries, and automate simple tasks.",
+    technologies: ["JavaScript"],
+  },
+  {
+    title: "Chat-App",
+    image: "./assets/Project4.png", // Replace with your image URL
+    description:
+      "Social media platform for sharing study materials and resources.",
+    technologies: ["Socket.io", "Node.js", "JavScript", "TailwindCSS"],
+  },
+];
+
+// Dynamically create project cards
+const projectsContainer = document.getElementById("projects");
+
+projects.forEach((project) => {
+  const projectCard = document.createElement("div");
+  projectCard.classList.add("project-card");
+
+  projectCard.innerHTML = `
+          <img src="${project.image}" alt="${project.title}" class="project-image" />
+          <div class="project-content">
+              <h3 class="project-title">${project.title}</h3>
+              <p class="project-description">${project.description}</p>
+              <div class="project-tech">
+                ${project.technologies
+      .map((tech) => `<span class="tech-badge">${tech}</span>`)
+      .join("")}
+              </div>
+          </div>
+      `;
+  projectsContainer.appendChild(projectCard);
+});
